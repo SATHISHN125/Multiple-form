@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-section active" id="step-1">
+            <h2>Step 1: Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" placeholder="Enter your phone number">
+            <label for="education">Education:</label>
+            <input type="text" id="education" placeholder="Enter your education">
+            <label for="about">About You:</label>
+            <textarea id="about" placeholder="Tell us about yourself" rows="3"></textarea>
+        </div>
+
+        <div class="form-section" id="step-2">
+            <h2>Step 2: Address Details</h2>
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address">
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="Enter your city">
+            <label for="country">Country:</label>
+            <input type="text" id="country" placeholder="Enter your country">
+        </div>
+
+        <div class="form-section" id="step-3">
+            <h2>Step 3: Preferences</h2>
+            <label><input type="checkbox" id="newsletter"> Subscribe to newsletter</label><br>
+            <label><input type="checkbox" id="updates"> Receive updates</label>
+        </div>
+
+        <div class="form-section" id="step-4">
+            <h2>Step 4: Review & Submit</h2>
+            <p><strong>Name:</strong> <span id="review-name"></span></p>
+            <p><strong>Email:</strong> <span id="review-email"></span></p>
+            <p><strong>Phone Number:</strong> <span id="review-number"></span></p>
+            <p><strong>Education:</strong> <span id="review-education"></span></p>
+            <p><strong>About You:</strong> <span id="review-about"></span></p>
+            <p><strong>Address:</strong> <span id="review-address"></span></p>
+            <p><strong>City:</strong> <span id="review-city"></span></p>
+            <p><strong>Country:</strong> <span id="review-country"></span></p>
+            <p><strong>Preferences:</strong> <span id="review-preferences"></span></p>
+            <button type="button" id="submit">Submit</button>
+        </div>
+
+        <div class="navigation-buttons">
+            <button class="prev" id="prev-btn" disabled>Previous</button>
+            <button class="next" id="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
